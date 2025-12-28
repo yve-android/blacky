@@ -1,5 +1,8 @@
 name: Build Blacky APK
 
+permissions:
+  contents: read
+
 on:
   push:
     branches: [ main, master ]
