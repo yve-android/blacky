@@ -14,10 +14,10 @@ jobs:
     
     steps:
     - name: Checkout
-      uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11  # v4.1.1
+      uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
     
     - name: Setup Python
-      uses: actions/setup-python@0a5c61591373683505ea898e09a3ea4f39ef2b9c  # v5.0.0
+      uses: actions/setup-python@0a5c61591373683505ea898e09a3ea4f39ef2b9c
       with:
         python-version: '3.11'
     
@@ -30,7 +30,7 @@ jobs:
         pip install buildozer cython==0.29.36
     
     - name: Cache Buildozer
-      uses: actions/cache@13aacd865c20de90d75de3b17ebe84f7a17d57d2  # v4.0.0
+      uses: actions/cache@13aacd865c20de90d75de3b17ebe84f7a17d57d2
       with:
         path: |
           .buildozer
@@ -41,9 +41,8 @@ jobs:
       run: buildozer android debug
     
     - name: Upload APK
-      uses: actions/upload-artifact@26f96dfa697d77e81fd5907df203aa23a56210a8  # v4.3.0
+      uses: actions/upload-artifact@26f96dfa697d77e81fd5907df203aa23a56210a8
       with:
         name: blacky-apk
         path: bin/*.apk
-        retention-days: 30o
-        
+        retention-days: 30
