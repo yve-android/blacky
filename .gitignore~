@@ -1,0 +1,18 @@
+# Logs & Runtime
+logs/
+*.log
+
+# Data / Runtime State
+data/
+
+# Temp / Cache
+tmp/
+*.tmp
+
+# OS / Editor
+.DS_Store
+*.swp
+*.bak
+
+# Termux / Android noise
+.termux/
