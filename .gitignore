@@ -16,3 +16,8 @@ tmp/
 
 # Termux / Android noise
 .termux/
+
+# Blacky runtime / safety
+.blacky_guard
+SAFE_MODE
+backup/
